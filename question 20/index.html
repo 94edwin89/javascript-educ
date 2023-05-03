@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p>Q20 Write a program to count the number of vowels in a given string.</p>
+<p>[abc de fgh ijkl] counting the vowels of given words</p>
+
+
+
+    <script>
+        
+    
+        function isVowel(ch) {
+            ch = ch.toUpperCase();
+            return ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U";
+        }
+    
+        // Returns count of vowels in str
+        function countVowels(str)
+        {
+            var count = 0;
+            for (var i = 0; i < str.length; i++)
+            if (isVowel(str[i]))
+                
+                // Check for vowel
+                ++count;
+            return count;
+        }
+    
+    
+    
+        // string object
+        var str = "abc de fgh ijkl";
+    
+        // Total numbers of Vowel
+        document.write(countVowels(str));
+        document.write("<br>");
+     
+        </script>
+    
+    
+   
+</body>
+</html>

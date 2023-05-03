@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>Q16 sum all multiples of 3 and 5</p>
+
+<p>sum of all multiples of 5</p>
+<p id="demo"></p>
+<p>sum of all multiples of 3</p>
+<p id="demo1"></p>
+
+
+
+
+    <script>
+     function multiples(number) {
+  let sum = 0;
+  number=10;
+  for (let i = 0; i < number; i++) {
+
+    
+      sum += i*5;
+    
+  }
+  return sum;
+}
+
+
+console.log( multiples(5));
+document.getElementById('demo').innerHTML=multiples(5);
+
+
+
+function multipless(number) {
+  let sum1 = 0;
+  number=10;
+  for (let i = 0; i <= number; i++) {
+
+    
+      sum1 += i*3;
+    
+  }
+  return sum1;
+}
+console.log(multipless(3));
+document.getElementById('demo1').innerHTML=multipless(3);
+
+// 	function print_table(n, i = 1) {
+// 		if (i == 11) 
+// 			return;
+            
+// 		console.log(n * i);
+// 		i++; 
+// 		print_table(n, i);
+// 	}
+	
+	
+// 	let n = 5;
+// 	print_table(n);
+
+//     function print_table(m,i=1){
+//         if (i==11)
+//         return;
+//         console.log(m*i);
+//         i++;
+//         print_table(m,i);
+//     }
+// let m=3;
+// print_table(m);
+    </script>
+</body>
+</html>

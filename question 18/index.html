@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p>Q18 Write a program to find the union of two arrays of integers.</p>
+<p>array 1 = [1,2,3,4,5,6]</p>
+<p>array 2 = [7,8,9,10]</p>
+
+<p>merging two array</p>
+
+
+
+
+
+
+
+    <script>
+         function printUnion( arr1,  arr2,  m,  n)
+    {
+        var i = 0, j = 0;
+        while (i < m && j < n) {
+            if (arr1[i] <= arr2[j])
+                document.write(arr1[i++] + " ");
+            else if (arr2[j] <= arr1[i])
+                document.write(arr2[j++] + " ");
+            else {
+                document.write(arr2[j++] + " ");
+                i++;
+            }
+        }
+ 
+        /* Print remaining elements of
+        the larger array */
+        while (i < m)
+            document.write(arr1[i++] + " ");
+        while (j < n)
+            document.write(arr2[j++] + " ");
+ 
+        return 0;
+    }
+ 
+        var arr1 = [ 1, 2, 4, 5, 6 ];
+        var arr2 = [ 7, 8, 9, 10 ];
+        var m = arr1.length;
+        var n = arr2.length;
+        printUnion(arr1, arr2, m, n);
+    </script>
+</body>
+</html>
